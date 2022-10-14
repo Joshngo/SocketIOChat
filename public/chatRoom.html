@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chatroom.IO</title>
+    
+    <link rel="stylesheet" href="mainStyle.css"/>
+  </head>
+
+  <!-- Main header -->
+  <h1 id="main-header">Chatroom.io</h1>
+
+  <!-- Chat body container -->
+  <body id="chat-body">
+    <!-- Chatroom container -->
+    <div id="chatroom">
+      <!-- Chatmessages container -->
+      <div id="chatMessages">
+        <!-- Messages will go in here. -->
+      </div>
+      <!-- Siderbar container -->
+      <div id="sidebar">
+        <!-- Header for sidebar -->
+        <h1 class="header-text">Commands</h1>
+        <!-- Command list -->
+        <ul id="command-list">
+          <li>/changecolor #FFFFFF</li>
+          <li>/changename [username]</li>
+        </ul>
+        <!-- Header for users in chatroom -->
+        <h1 class="header-text">Users in Chatroom</h1>
+        <!-- List of users -->
+        <ul id="user-list">
+          <!-- List of user items go in here. -->
+        </ul>
+      </div>
+
+    </div>
+
+
+    <!-- Form at the bottom, which consists of the input bar and the send button -->
+    <form id="form" action="">
+      <input id="input" autocomplete="off" /><button>Send</button>
+    </form>
+
+
+    <!-- Scripts that we need for the applications -->
+
+    <!-- This script helps grab data from the forms. It is qs (Query String) library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.10.3/qs.min.js" integrity="sha512-juaCj8zi594KHQqb92foyp87mCSriYjw3BcTHaXsAn4pEB1YWh+z+XQScMxIxzsjfM4BeVFV3Ij113lIjWiC2w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!-- Socket.js library to have server side and client side response. -->
+    <script src="/socket.io/socket.io.js"></script>
+
+    <!-- To include client.js file. -->
+    <script src="client.js"></script>
+
+  </body>
+</html>

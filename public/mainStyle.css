@@ -1,0 +1,234 @@
+body { 
+    background-color:  #5a5c65;
+    margin: 0; 
+    padding-bottom: 3rem; 
+}
+
+/* CSS styling for the main chatroom page, including messages, chatroom, header etc. */
+
+/* For the input bar */
+#form { background-color:  #5a5c65; 
+    padding: 0.25rem; 
+    position: fixed;
+    bottom: 0; 
+    left: 0;
+    right: 0; 
+    display: flex;
+    height: 3rem;
+    box-sizing: border-box; 
+    backdrop-filter: blur(10px);
+}
+
+/* For the input bar */
+#input { 
+    border: 6px solid #329bd6;
+    padding: 0 1rem; 
+    flex-grow: 1; 
+    border-radius: 2rem; 
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-right: 5px;
+    margin-bottom: 2px;
+}
+
+#input:focus { outline: none; }
+
+/* For the button on the form */
+#form > button { 
+    background: #329bd6;
+    border: none;
+    padding: 0 1rem;
+    margin: 0.25rem;
+    border-radius: 25px;
+    outline: none; 
+    color:#fff; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
+}
+
+/* Header for the top of the page*/
+#main-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-image: linear-gradient(to right,#329bd6,  #0b77bf   );
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 0%;
+    margin-bottom: 5px;
+}
+
+/* For messages */
+#message {
+    color: #e4e5e9;
+    font-weight: 600;
+    padding-left: 20px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    padding-right: 20px;
+    background-color: #333;
+    margin-top: 10px;
+    margin-bottom:10px;
+    border-radius: 25px;
+    border: 4px solid #0b77bf;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Same for messages, but for messages for individuals to distinguish their own mesages from others */
+#self-message {
+    color: #e4e5e9;
+    font-weight: 600;
+    padding-left: 20px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    padding-right: 20px;
+    background-color: #454545;
+    margin-top: 10px;
+    margin-bottom:10px;
+    border-radius: 25px;
+    border: 4px solid #329bd6;
+}
+
+/* Styling for message content text */
+#msg-content {
+    font-size: 20px;
+    margin-top: 2px;
+    overflow-wrap: break-word;
+}
+
+/* Styling for the name and time for messages */
+#name-time {
+    font-size: 18px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+/* Container for chat messages. */
+#chatMessages {
+    margin-top: 5px;
+    padding:15px;
+    overflow-y: scroll;
+    height:720px;
+    width: 2600px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+/* For the general chatroom on the page that contains mainly everything.*/
+#chatroom {
+    display: flex;
+    flex-direction: row;
+    max-width: 2000px;
+}
+
+/* Below is the CSS code for the sidebar. */
+
+/* Header text for the sidebar */
+.header-text {
+    font-size: 32px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
+    align-self: center;
+    /* padding-top: 15px; */
+}
+
+/* Styling for the sidebar */
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    margin-top: 35px;
+    margin-right: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-image: linear-gradient(to bottom,#329bd6,  #0b77bf   );
+    border-radius: 25px;
+    max-width: 100%;
+    min-width: 150px;
+    width: 550px;
+    border: #333 solid 10px;
+    height: 700px;
+}
+
+/* Styling for the list of users. */
+#user-list {
+    font-size:30px;
+    list-style-type: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
+    align-self: left;
+    overflow-y: scroll;
+    height: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for the list of commands */
+#command-list {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
+}
+
+#user-list-item {
+    border: solid #0f4c73 5px;
+    overflow-wrap: break-word;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-right: 15px;
+    margin-bottom: 5px;
+}
+
+
+/* Below is the CSS for the join windows */
+
+/* General window for the join area */
+#join-window {
+    text-align: center;
+    max-width: 600px;
+    height: 400px;
+    background-image: linear-gradient(to bottom right,#329bd6,  #0b77bf   );
+    margin: auto;
+    margin-top: 150px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+/* smaller area within the join window */
+#join-window-sub {
+    display: flex;
+    width: 400px;
+    max-width: 800px;
+    height: 200px;
+    background-color: #60b7e8;
+    align-content: center;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#usern {
+    margin-bottom: 10px;
+}
+
+.btn {
+    margin-top: 25px;
+}
+
+.join-label {
+    margin: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#text {
+    font-size: 42px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
+}

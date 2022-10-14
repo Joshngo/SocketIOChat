@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chatroom.IO</title>
+        <link rel="stylesheet" href="mainStyle.css"/>
+    </head>
+
+
+    <body id="login-body">
+        
+        <!-- Main window that contains other elements -->
+        <div id="join-window">
+            <!-- Header -->
+            <h2 id="text">Chatroom.IO</h2>
+            <!-- Smaller window for styling -->
+            <div id="join-window-sub">
+                <!-- Form to input username -->
+                <form id = "join" action="chatRoom.html">
+                    <label class="join-label" for="usern">Username: </label><br>
+                    <input type="text" id="usern" name = usern><br>
+                    <label class="join-label" for="color">Choose username color</label><br>
+                    <!-- Select dropdown to choose color -->
+                    <select name="color" id="color-select">
+                        <option value="default">Default Theme</option>
+                        <option value="Red">Red</option>
+                        <option value="Blue">Blue</option>
+                        <option value="Green">Green</option>
+                        <option value="Orange">Orange</option>
+                        <option value="Purple">Purple</option>
+                        <option value="Pink">Pink</option>
+                        <option value="Black">Black</option>
+                    </select><br>
+                    <!-- Button to join chatroom. -->
+                    <button type="submit" class="btn">Join Chatroom</button>
+                </form>
+                <br>
+            </div>
+        </div>
+
+
+
+
+
+    </body>
+</html>
